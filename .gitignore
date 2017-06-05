@@ -1,0 +1,25 @@
+# Composer
+/.composer/
+/vendor
+/bin
+
+# Node.js
+/node_modules
+
+# Laravel
+.env
+/public/*
+!/public/.htaccess
+!/public/index.php
+!/public/robots.txt
+!/public/web.config
+/storage/*.key
+
+# IDE Helper
+/_ide_helper.php
+.phpstorm.meta.php
+/.idea
+
+# Evironment
+/.vagrant
+/.cache/
