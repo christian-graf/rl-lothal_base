@@ -164,7 +164,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
-         * Package Service Providers...
+         * Laravel Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
 
@@ -176,6 +176,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        /**
+         * 3rd Party Service Providers...
+         */
+        Yab\Quarx\QuarxProvider::class,
     ],
 
     /*
