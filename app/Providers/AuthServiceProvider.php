@@ -25,6 +25,29 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        \Gate::define('quarx', function ($user) {
+            return ($user->roles->first()->name === 'admin');
+        });
+        \Gate::define('admin', function ($user) {
+            return ($user->roles->first()->name === 'admin');
+        });
+        \Gate::define('quarx', function ($user) {
+            return ($user->roles->first()->name === 'admin');
+        });
+        \Gate::define('admin', function ($user) {
+            return ($user->roles->first()->name === 'admin');
+        });
+        \Gate::define('quarx', function ($user) {
+            return ($user->roles->first()->name === 'admin');
+        });
+        \Gate::define('admin', function ($user) {
+            return ($user->roles->first()->name === 'admin');
+        });
+        \Gate::define('quarx', function ($user) {
+            return ($user->roles->first()->name === 'admin');
+        });
+        \Gate::define('admin', function ($user) {
+            return ($user->roles->first()->name === 'admin');
+        });
     }
 }

@@ -44,6 +44,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->mapApiRoutes($router);
         $this->mapWebRoutes($router);
+        $this->mapQuarxRoutes($router);
     }
 
     /**
@@ -82,5 +83,19 @@ class RouteServiceProvider extends ServiceProvider
         ], function ($router) {
             require base_path('routes/api.php');
         });
+    }
+
+    /**
+     * Define the quarx-cms routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @param \Illuminate\Routing\Router $router
+     *
+     * @return void
+     */
+    protected function mapQuarxRoutes(Router $router)
+    {
+        require base_path('routes/api.php');
     }
 }
