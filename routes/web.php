@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+/** @var \Illuminate\Routing\Router $router */
+
+$router->get('/', function () {
     return view('welcome');
+});
+
+$router->get('/boilerplate', function () {
+   return view('boilerplate');
 });
