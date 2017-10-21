@@ -4,6 +4,7 @@
     "keywords": ["application", "star wars", "rebel legion", "lothal base"],
     "license": "MIT",
     "type": "project",
+    "version": "0.1.0",
     "require": {
         "php": "~7.1.7",
         "fideloper/proxy": "~3.3",
