@@ -6,10 +6,9 @@
     RewriteEngine On
 
     # Redirect Trailing Slashes If Not A Folder...
-    # note-sclable-20160930: this rule is disabled, because the request type will also be changed to GET
-    # e.G. POST requests will rewritten to GET requests
-#    RewriteCond %{REQUEST_FILENAME} !-d
-#    RewriteRule ^(.*)/$ /$1 [L,R=301]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
 
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
